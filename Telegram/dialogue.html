@@ -1,0 +1,76 @@
+<html>
+<head><style>
+  .basic{
+    display:inline-block;
+  }
+  .date {
+    font-size:12px
+  }
+  .mytext{
+    position: relative;
+    left:200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(245,255,240);
+    margin-left: 30px;
+  }
+  .dialog2{
+    position: absolute;
+    opacity: 0.1;
+    top: 30px;
+    left:360px;
+  }
+  .dialog{
+    position: absolute;
+    bottom:0px
+  }
+  .head{
+    position: absolute;
+    top:5px;
+  }
+  .histext{
+    position: relative;
+    right:240px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(230,235,254)
+  }
+</style></head>
+<body>
+<div><img src="logo.png"></div>
+<div>
+<div class = 'basic'>
+<ul>
+<li class = 'user'><a href="#vasya"><div><img src="vasya.png" /><div><div>Вася</div><div>Пойдём гулять после ...</div></div><div>14:22</div></div></a></li>
+<li class = 'user'><a href="#oleg"><div><img src="oleg.png" /><div><div>Олег</div><div>Когда встретимся с Васей?</div></div><div>14:37</div></div></a></li>
+<li class = 'user'><a href="#igor"><div><img src="igor.png" /><div><div>Игорь</div><div>Nc3</div></div><div>15:00</div></div></a></li>
+</ul>
+</div>
+<div style="margin-left:35vw" class = 'basic'>
+  <img src="code.jpeg" alt="" class = 'dialog2' width = 729px height = 385>
+<div class = 'head'><div><strong>Игорь </strong>  last seen: now</div></div>
+<br>
+<div class = 'dialog'>
+<div class = date align = 'center'>September 12</div>
+<div class = 'mytext' ><span>Игорь, давай в шахматы!<br/>Я черными.</span><span class = 'time'><small>  14:55</small></span></div>
+<br>
+<div class = 'histext'><span>Поехали. e2-e4.</span><span class = 'time'><small>14:58</small></span></div>
+<br>
+<div class = 'mytext' ><span>e7-e5</span><span class = 'time'><small>14:59</small></span></div>
+<br>
+<div class = 'histext'><span>Nc3</span><span class = 'time'><small>15:00</small></span></div>
+
+<div>
+<br>
+<br>
+<form action="/send_message" method="POST">
+<textarea></textarea>
+<button type="submit"><img src="send.png" lenght = '25px' width = '25px'></button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</body>
