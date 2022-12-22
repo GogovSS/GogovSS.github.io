@@ -1,0 +1,67 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=iSAaN0_3lMAn8718ArGdsEpHp8dmBLVOv7E2W2DxgraLvxsNgWy9FEbAch8VDI3w9SeE5wSbEvV-ukHSp6pWCFCz-ZlX4idmpARtG5bGrMU" charset="UTF-8"></script></head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+        <h1>Презентация по HAML
+        </h1>
+        <p style = 'font-size:49px'>HAML - инструмент для упрощения html- вёрстки.</p>
+      </section>
+			<section>
+        <h3>Вставка html-кода</h3>
+        <div style='margin:0px; display:inline-block; font-size:28px'align ="left">
+					Каждый тег создаётся с помощью <i>%название_тега</i> (например <i>%p</i>). Всё содержимое тега должно выделятся отступом. Тег заканчивается там, где заканчивается отступ. <br>
+Для присвоения тегу <i>class</i> или <i>id</i> после названия тега нужно написать <i>.имя_класса</i> или <i>#идентифекатор</i>. Для присвоения для аргументов нужно ещё написать <i> (название_атрибута = значение_атрибута)</i>.
+</div>
+				<pre style = 'background-color: yellow'>
+					<code>
+%html
+	%head
+		%title HAML
+	%body
+  	%h1.head Haml программа
+		%p
+	    #text HAML - инструмент для упрощения html-вёрстки.
+	    %a(href = “https://haml.ru/”) о HAML
+</code>
+</pre>
+
+          </section>
+      		<section>
+      			<h3 style = 'margin-bottom: 50px'>Вставка CSS и JS</h3>
+						Для того, чтобы вставить CSS код (подключить стили из CSS-файла), напишите <br> <i>%link(rel = "stylesheet", href = "имя_CSS_файла" )</i> <br>
+						С JavaScript аналогично - напишите <br> <i> %script(src = "имя_JS_файла")</i>
+					</section>
+					<section>
+						<h4>Часть кода github, переведённая на HAML </h4>
+						<pre> <code>
+%button.Button--primary.Button--medium.Button.Button--fullWidth.mt-2(disabled="disabled" data-disable-invalid="true" data-submitting-message="Creating..." type="submit" data-view-component="true")
+    %span.Button-content
+      %span.Button-label Create
+%p.note.mt-2.mb-0
+    %strong Tip:
+    type
+    %code :
+    to add emoji to the name or description.
+
+%div.Box-footer.Box-row--gray.text-small.color-fg-muted.d-flex.flex-items-baseline.py-2(data-view-component="true")
+   %span.Label.Label--success.Label--inline.px-2.mr-2(title="Feature Release Label: Beta" aria-label="Feature Release Label: Beta" data-view-component="true")
+	 		Beta
+   %span.mr-1 Lists are currently in beta.
+   %a(href="/github/feedback/discussions/categories/lists-feedback") Share feedback and report bugs.
+						</code> </pre>
+					</section>
+		</div>
+	</div>
+	<script src="dist/reveal.js"></script>
+	<script>
+		Reveal.initialize({/* config */});
+	</script>
+</body>
+</html>

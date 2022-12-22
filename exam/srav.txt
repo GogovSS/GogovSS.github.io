@@ -1,0 +1,29 @@
+%button.Button--primary.Button--medium.Button.Button--fullWidth.mt-2 (disabled="disabled" data-disable-invalid="true" data-submitting-message="Creating..." type="submit" data-view-component="true")
+    %span.Button-content
+      %span.Button-label Create
+%p.note.mt-2.mb-0
+    %strong Tip:
+    type 
+    %code>:
+    to add emoji to the name or description.
+
+%div.Box-footer.Box-row--gray.text-small.color-fg-muted.d-flex.flex-items-baseline.py-2 (data-view-component="true")
+   %span.Label.Label--success.Label--inline.px-2.mr-2 (title="Feature Release Label: Beta" aria-label="Feature Release Label: Beta" data-view-component="true")
+	Beta
+   %span.mr-1 Lists are currently in beta.
+   %a (href="/github/feedback/discussions/categories/lists-feedback") Share feedback and report bugs.
+
+
+
+
+ <button disabled="disabled" data-disable-invalid="true" data-submitting-message="Creating..." type="submit" data-view-component="true" class="Button--primary Button--medium Button Button--fullWidth mt-2">    <span class="Button-content">
+      <span class="Button-label">Create</span>
+    </span>
+</button>  
+  <p class="note mt-2 mb-0">
+    <strong>Tip:</strong> type <code>:</code> to add emoji to the name or description.
+  </p>
+  <div data-view-component="true" class="Box-footer Box-row--gray text-small color-fg-muted d-flex flex-items-baseline py-2">
+  <span title="Feature Release Label: Beta" aria-label="Feature Release Label: Beta" data-view-component="true" class="Label Label--success Label--inline px-2 mr-2">Beta</span>
+  <span class="mr-1">Lists are currently in beta.</span>
+  <a href="/github/feedback/discussions/categories/lists-feedback">Share feedback and report bugs.</a>
